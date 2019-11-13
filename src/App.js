@@ -4,6 +4,8 @@ import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 
+import Landingpage from "./components/Pages/Landingpage/Landingpage";
+
 class App extends Component {
   state = { sideDrawerOpen: false };
 
@@ -18,11 +20,9 @@ class App extends Component {
   };
 
   render() {
-
     let backdrop;
 
     if (this.state.sideDrawerOpen) {
-
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
 
@@ -33,7 +33,7 @@ class App extends Component {
         {backdrop}
 
         <main style={{ marginTop: "64px" }}>
-          <p>This is the page content</p>
+          <Landingpage />
         </main>
       </div>
     );
