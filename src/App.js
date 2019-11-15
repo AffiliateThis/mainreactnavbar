@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import ReactDOM from "react-dom";
 
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 
-import Landingpage from "./components/Pages/Landingpage/Landingpage";
+// import Main from "./components/Main";
 
 class App extends Component {
   state = { sideDrawerOpen: false };
@@ -32,9 +34,7 @@ class App extends Component {
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
 
-        <main style={{ marginTop: "64px" }}>
-          <Landingpage />
-        </main>
+        <main style={{ marginTop: "64px" }}></main>
       </div>
     );
   }
