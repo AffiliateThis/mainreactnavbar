@@ -1,11 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import "../SideDrawer/DrawerToggleButton";
 import "./Toolbar.css";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import Landingpage from "../Landingpage/Landingpage";
 import About from "../About/About";
+import Contact from "../Contact/Contact";
+import Services from "../Services/Services";
+import Meettheteam from "../Meettheteam/Meettheteam";
 
 const toolbar = props => (
   <header className="toolbar">
@@ -15,33 +17,48 @@ const toolbar = props => (
           <DrawerToggleButton click={props.drawerClickHandler} />
         </div>
         <div className="toolbar_logo">
-          <Link to="/">Home</Link>
+          <Link to="/">HOME</Link>
         </div>
         <div className="spacer"></div>
 
         <div className="toolbar_navigation_items">
           <ul>
             <li>
-              <a href="/about"> ABOUT</a>
+              <Link to="/about">ABOUT</Link>
             </li>
             <li>
-              <a href="/services">SERVICES</a>
+              <Link to="/services">SERVICES</Link>
             </li>
             <li>
-              <a href="/contact">CONTACT US</a>
+              <Link to="/meettheteam">MEET THE TEAM</Link>
+            </li>
+
+            <li>
+              <Link to="/contact">CONTACT US</Link>
             </li>
           </ul>
         </div>
       </nav>
+
       <Switch>
+        <Route exact path="/">
+          <Landingpage />
+        </Route>
+
         <Route path="/about">
           <About />
         </Route>
-        {/* <Route path="/contact">
-            <Users />
-          </Route> */}
-        <Route path="/">
-          <Landingpage />
+
+        <Route path="/contact">
+          <Contact />
+        </Route>
+
+        <Route path="/services">
+          <Services />
+        </Route>
+
+        <Route path="/meettheteam">
+          <Meettheteam />
         </Route>
       </Switch>
     </Router>

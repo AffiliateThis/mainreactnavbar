@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./SideDrawer.css";
-import "../Main"
+// import "../Main"
 
 const sideDrawer = props => {
   let drawerClasses = 'side-drawer';
@@ -12,6 +12,7 @@ const sideDrawer = props => {
 
   return (
     <nav className={drawerClasses}>
+      
       <ul>
         <li>
           <a href="/about"> ABOUT</a>
