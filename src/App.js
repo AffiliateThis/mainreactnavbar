@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
+import Footer from "./components/Footer/Footer";
 
 // import Main from "./components/Main";
 
@@ -35,7 +36,9 @@ class App extends Component {
         {backdrop}
 
         <main style={{ marginTop: "64px" }}></main>
+        
       </div>
+      
     );
   }
 }

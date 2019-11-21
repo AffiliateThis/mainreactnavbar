@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: blueviolet;
-  height: 56px;
+  background-color: black;
+  height: 82px;
 }
 
 .toolbar_navigation {
@@ -16,6 +16,12 @@
 
 .toolbar_logo {
   margin-left: 1rem;
+}
+
+.toolbar_logo img {
+  width: 325px;
+  height: 77px;
+  padding-top: 8px;
 }
 
 .toolbar_logo a {
@@ -49,9 +55,8 @@
   color: goldenrod;
 }
 
-
 @media (max-width: 768px) {
-  .toolbar_navigation_items{
+  .toolbar_navigation_items {
     display: none;
   }
 }
@@ -64,7 +69,4 @@
   .toolbar_logo {
     margin-left: 0;
   }
-
 }
-
-

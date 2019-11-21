@@ -1,5 +1,13 @@
+
+
+
+
 .lpcontent {
-  background-color: red;
+  font-style: inherit;
+}
+
+.Background {
+  border-top: 40px;
 }
 
 .header {

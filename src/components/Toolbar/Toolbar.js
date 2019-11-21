@@ -8,6 +8,7 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Services from "../Services/Services";
 import Meettheteam from "../Meettheteam/Meettheteam";
+import logo from "../Logo/logo.png";
 
 const toolbar = props => (
   <header className="toolbar">
@@ -17,7 +18,9 @@ const toolbar = props => (
           <DrawerToggleButton click={props.drawerClickHandler} />
         </div>
         <div className="toolbar_logo">
-          <Link to="/">HOME</Link>
+          <Link to="/">
+            <img src={logo} alt="Logo" />
+          </Link>
         </div>
         <div className="spacer"></div>
 
