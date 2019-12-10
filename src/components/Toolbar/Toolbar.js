@@ -19,7 +19,7 @@ const toolbar = props => (
         </div>
         <div className="toolbar_logo">
           <Link to="/">
-            <img src={logo} alt="Logo" />
+            <img className="logo" src={logo} alt="Logo" />
           </Link>
         </div>
         <div className="spacer"></div>

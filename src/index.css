@@ -8,5 +8,7 @@ body {
   font-family: sans-serif;
   height: 100%;
   background: url("../src/components/Background/backgroundt.png");
-  background-color: #cccccc;
+  opacity: 92%;
+
+  background-color: grey;
 }
